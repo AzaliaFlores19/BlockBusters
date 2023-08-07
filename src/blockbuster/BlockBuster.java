@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class BlockBuster {
     
-    private ArrayList<BlockBusterItem> items;
+     private ArrayList<BlockBusterItem> items;
     
     public BlockBuster() {
         items = new ArrayList<>();
@@ -33,7 +33,7 @@ public class BlockBuster {
         return null;
     }
      
-    public void agregarItem(int codigo, String nombre, String tipoItem) {
+    public void agregarItem(int codigo, String nombre, String tipoItem, String estado) {
         // Verificar si ya existe un ítem con ese código y tipo
         for (BlockBusterItem item : items) {
             if (item.getCodigo() == codigo) {
@@ -44,11 +44,10 @@ public class BlockBuster {
             }
         }
 
-        Scanner scanner = new Scanner(System.in);
         double precioRenta=0;
 
         if (tipoItem.equalsIgnoreCase("MOVIE")) {
-            String estado = scanner.next();
+            
             items.add(new MovieItem(codigo, nombre, precioRenta, estado));
         } else if (tipoItem.equalsIgnoreCase("GAME")) {
             String consola="";
@@ -91,6 +90,7 @@ public class BlockBuster {
         auditarMovieEstadosRecursivo(itemList, index + 1);
     }
 
-    
+
+
 }
 
