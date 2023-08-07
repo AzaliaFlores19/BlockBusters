@@ -139,6 +139,9 @@ public class AuditarMovieEstado extends javax.swing.JFrame {
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
         // TODO add your handling code here:
+        Menu menu = new Menu();
+        menu.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnBackActionPerformed
 
     private void btnAuditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAuditarActionPerformed

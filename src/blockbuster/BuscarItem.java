@@ -167,6 +167,9 @@ public class BuscarItem extends javax.swing.JFrame {
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
         // TODO add your handling code here:
+        Menu menu = new Menu();
+        menu.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnBackActionPerformed
 
     private void btnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarActionPerformed

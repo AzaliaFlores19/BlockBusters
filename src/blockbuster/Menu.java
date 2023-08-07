@@ -165,18 +165,30 @@ MovieItem movieItem;
 
     private void btnBuscarItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarItemActionPerformed
         // TODO add your handling code here:
+         BuscarItem buscar= new BuscarItem();
+        buscar.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnBuscarItemActionPerformed
 
     private void btnAgregarItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarItemActionPerformed
         // TODO add your handling code here:
+         AgregarItem agregar= new AgregarItem();
+        agregar.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnAgregarItemActionPerformed
 
     private void btnRentarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRentarActionPerformed
         // TODO add your handling code here:
+         Rentar rentar= new Rentar();
+        rentar.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnRentarActionPerformed
 
     private void btnAuditarMovieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAuditarMovieActionPerformed
         // TODO add your handling code here:
+        AuditarMovieEstado auditar= new AuditarMovieEstado();
+        auditar.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnAuditarMovieActionPerformed
 
     private void btnSalirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalirMouseClicked
